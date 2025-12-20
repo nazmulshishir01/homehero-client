@@ -47,7 +47,8 @@ node_modules/
 .yarn-integrity
 
 
-.env
 
+.env
+.env.local
 
 .dataconnect
