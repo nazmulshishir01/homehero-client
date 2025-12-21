@@ -1,54 +1,18 @@
+# Dependencies
+node_modules
 
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-firebase-debug.log*
-firebase-debug.*.log*
+# Build output
+dist
 
-
-.firebase/
-
-pids
-*.pid
-*.seed
-*.pid.lock
-
-lib-cov
-
-coverage
-
-.nyc_output
-
-.grunt
-
-bower_components
-
-
-.lock-wscript
-
-build/Release
-
-node_modules/
-
-.npm
-
-
-.eslintcache
-
-
-.node_repl_history
-
-
-*.tgz
-
-
-.yarn-integrity
-
-
-
+# Environment variables
 .env
 .env.local
 
-.dataconnect
+# Logs
+*.log
+
+# Editor
+.DS_Store
+
+# Firebase
+.firebase/

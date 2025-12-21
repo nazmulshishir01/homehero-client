@@ -69,7 +69,7 @@ const UpdateService = () => {
 
       const service = response.data;
 
-      
+      // Verify ownership
       if (service.providerEmail !== user?.email) {
         toast.error("You can only edit your own services");
         navigate("/my-services");
@@ -102,7 +102,7 @@ const UpdateService = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    
+    // Validation
     if (
       !formData.serviceName ||
       !formData.category ||
@@ -123,7 +123,7 @@ const UpdateService = () => {
     try {
       const token = localStorage.getItem("access-token");
 
-      
+      // Prepare service data
       const serviceData = {
         serviceName: formData.serviceName,
         category: formData.category,
@@ -135,7 +135,7 @@ const UpdateService = () => {
       };
 
       const response = await axios.patch(
-        `${import.meta.env.VITE_API_URL}/services/${id}`,
+        `${import.meta.env.VITE_API_URL}/services/${id}?email=${user?.email}`,
         serviceData,
         {
           headers: {
@@ -178,7 +178,7 @@ const UpdateService = () => {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl mx-auto"
           >
-            
+            {/* Header */}
             <div className="flex items-center gap-4 mb-8">
               <button
                 onClick={() => navigate("/my-services")}
@@ -208,14 +208,14 @@ const UpdateService = () => {
               </div>
             </div>
 
-            
+            {/* Form Card */}
             <div
               className={`rounded-2xl shadow-xl p-8 ${
                 theme === "dark" ? "bg-slate-800" : "bg-white"
               }`}
             >
               <form onSubmit={handleSubmit} className="space-y-6">
-              
+                {/* Service Name */}
                 <div>
                   <label
                     className={`block text-sm font-medium mb-2 ${
@@ -242,7 +242,7 @@ const UpdateService = () => {
                   </div>
                 </div>
 
-                
+                {/* Category */}
                 <div>
                   <label
                     className={`block text-sm font-medium mb-2 ${
@@ -271,7 +271,7 @@ const UpdateService = () => {
                   </select>
                 </div>
 
-               
+                {/* Price */}
                 <div>
                   <label
                     className={`block text-sm font-medium mb-2 ${
@@ -300,7 +300,7 @@ const UpdateService = () => {
                   </div>
                 </div>
 
-          
+                {/* Description */}
                 <div>
                   <label
                     className={`block text-sm font-medium mb-2 ${
@@ -327,7 +327,7 @@ const UpdateService = () => {
                   </div>
                 </div>
 
-               
+                {/* Image URL */}
                 <div>
                   <label
                     className={`block text-sm font-medium mb-2 ${
@@ -368,7 +368,7 @@ const UpdateService = () => {
                   </p>
                 </div>
 
-                
+                {/* Provider Name */}
                 <div>
                   <label
                     className={`block text-sm font-medium mb-2 ${
@@ -392,7 +392,7 @@ const UpdateService = () => {
                   </div>
                 </div>
 
-                
+                {/* Provider Email */}
                 <div>
                   <label
                     className={`block text-sm font-medium mb-2 ${
@@ -416,7 +416,7 @@ const UpdateService = () => {
                   </div>
                 </div>
 
-           
+                {/* Image Preview */}
                 {formData.imageUrl && (
                   <div>
                     <label
@@ -438,6 +438,7 @@ const UpdateService = () => {
                   </div>
                 )}
 
+                {/* Submit Button */}
                 <button
                   type="submit"
                   disabled={loading || !user}
