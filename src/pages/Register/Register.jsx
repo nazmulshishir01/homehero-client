@@ -137,16 +137,9 @@ const Register = () => {
           animate={{ opacity: 1, y: 0 }}
           className="max-w-md w-full"
         >
-          {/* Logo and Title */}
+          
           <div className="text-center mb-8">
-            {/* <Link to="/" className="inline-block mb-6">
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-20 h-20 mx-auto bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center shadow-2xl shadow-primary-500/30"
-              >
-                <span className="text-3xl text-white font-bold">HH</span>
-              </motion.div>
-            </Link> */}
+          
             <h2
               className={`text-3xl font-bold ${theme === "dark" ? "text-white" : "text-gray-900"}`}
             >
@@ -159,7 +152,7 @@ const Register = () => {
             </p>
           </div>
 
-          {/* Registration Form Card */}
+          
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -169,7 +162,7 @@ const Register = () => {
             }`}
           >
             <form onSubmit={handleSubmit} className="space-y-5">
-              {/* Name Field */}
+              
               <div>
                 <label
                   className={`block text-sm font-medium mb-2 ${
@@ -195,7 +188,7 @@ const Register = () => {
                 </div>
               </div>
 
-              {/* Email Field */}
+              
               <div>
                 <label
                   className={`block text-sm font-medium mb-2 ${
@@ -221,7 +214,7 @@ const Register = () => {
                 </div>
               </div>
 
-              {/* Photo URL Field */}
+              
               <div>
                 <label
                   className={`block text-sm font-medium mb-2 ${
@@ -254,7 +247,7 @@ const Register = () => {
                 </div>
               </div>
 
-              {/* Password Field */}
+              
               <div>
                 <label
                   className={`block text-sm font-medium mb-2 ${
@@ -290,7 +283,7 @@ const Register = () => {
                   </button>
                 </div>
 
-                {/* Password Validation Checklist */}
+                
                 {formData.password && (
                   <div className="mt-2 space-y-1">
                     <div
@@ -315,7 +308,7 @@ const Register = () => {
                 )}
               </div>
 
-              {/* Confirm Password Field */}
+              
               <div>
                 <label
                   className={`block text-sm font-medium mb-2 ${
@@ -358,7 +351,7 @@ const Register = () => {
                   )}
               </div>
 
-              {/* Register Button */}
+             
               <button
                 type="submit"
                 disabled={loading}
@@ -372,7 +365,7 @@ const Register = () => {
               </button>
             </form>
 
-            {/* Divider */}
+            
             <div className="relative my-6">
               <div className="absolute inset-0 flex items-center">
                 <div
@@ -394,7 +387,7 @@ const Register = () => {
               </div>
             </div>
 
-            {/* Google Register */}
+            
             <button
               type="button"
               onClick={handleGoogleRegister}
@@ -409,7 +402,7 @@ const Register = () => {
               Continue with Google
             </button>
 
-            {/* Login Link */}
+            
             <p
               className={`mt-6 text-center ${
                 theme === "dark" ? "text-gray-400" : "text-gray-600"

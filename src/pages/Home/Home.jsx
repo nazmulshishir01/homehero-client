@@ -211,7 +211,7 @@ const Home = () => {
     },
   ];
 
-  // ✅ Show LoadingSpinner when page is loading
+  
   if (pageLoading) {
     return <LoadingSpinner />;
   }
@@ -226,7 +226,7 @@ const Home = () => {
         />
       </Helmet>
 
-      {/* Hero Section with Slider */}
+      
       <section className="relative h-[70vh] md:h-[80vh] overflow-hidden">
         <Swiper
           modules={[Autoplay, Pagination, EffectFade]}
@@ -289,7 +289,7 @@ const Home = () => {
         </Swiper>
       </section>
 
-      {/* Dynamic Section - 6 Services from Database */}
+      
       <section
         className={`py-20 ${theme === "dark" ? "bg-slate-900" : "bg-gray-50"}`}
       >
@@ -445,7 +445,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
+      
       <section
         className={`py-20 ${theme === "dark" ? "bg-slate-800" : "bg-white"}`}
       >
@@ -511,7 +511,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
+      
       <section className="py-20 bg-gradient-to-r from-primary-500 to-primary-600">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -534,7 +534,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      
       <section
         className={`py-20 ${theme === "dark" ? "bg-slate-900" : "bg-gray-50"}`}
       >

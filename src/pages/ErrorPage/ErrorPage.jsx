@@ -20,7 +20,7 @@ const ErrorPage = () => {
           animate={{ opacity: 1, y: 0 }}
           className="max-w-2xl w-full text-center"
         >
-          {/* 404 Animation */}
+          
           <motion.div
             animate={{
               rotate: [0, 5, -5, 0],
@@ -38,7 +38,7 @@ const ErrorPage = () => {
             </span>
           </motion.div>
 
-          {/* Error Image */}
+          
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 3, repeat: Infinity }}
@@ -47,7 +47,7 @@ const ErrorPage = () => {
             <div className="text-6xl">🏠❓</div>
           </motion.div>
 
-          {/* Error Message */}
+          
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Oops! Page Not Found
           </h1>
@@ -56,7 +56,7 @@ const ErrorPage = () => {
             doesn't exist. Let's get you back on track!
           </p>
 
-          {/* Action Buttons */}
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/"
@@ -74,7 +74,7 @@ const ErrorPage = () => {
             </button>
           </div>
 
-          {/* Helpful Links */}
+          
           <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
               Here are some helpful links:
