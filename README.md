@@ -1,4 +1,4 @@
-# HomeHero — Local Household Service Finder 🏠✨ (Client)
+# HomeHero — Local Household Service Finder 🏠 (Client)
 
 A modern web application that connects users with trusted local service providers. Browse services, book appointments, and leave ratings/reviews — while providers can manage their own services with full CRUD operations.
 
@@ -15,17 +15,10 @@ A modern web application that connects users with trusted local service provider
 ---
 
 ## 🖼️ Screenshots
-> Add 1–3 screenshots for a more professional README.
-
-**How to add screenshots**
-1. Create a folder named `screenshots/` in the repo root  
-2. Put screenshots there (example names: `home.png`, `details.png`, `dashboard.png`)  
-3. Update the image links below
 
 ![HomeHero Preview](./screenshots/home.png)
 
-<!-- Optional -->
-<!-- ![Service Details](./screenshots/details.png) -->
+<!-- ![Service Details]([./screenshots/details.png](https://i.ibb.co.com/20BVNjKW/dashboard.png)) -->
 <!-- ![Dashboard](./screenshots/dashboard.png) -->
 
 ---
