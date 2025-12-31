@@ -16,10 +16,9 @@ A modern web application that connects users with trusted local service provider
 
 ## 🖼️ Screenshots
 
-![HomeHero Preview](./screenshots/home.png)
-
-<!-- ![Service Details]([./screenshots/details.png](https://i.ibb.co.com/20BVNjKW/dashboard.png)) -->
-<!-- ![Dashboard](./screenshots/dashboard.png) -->
+| Home | Service Page | Dashboard |
+|------|--------------|-----------|
+| ![Home](https://i.ibb.co.com/mCVP8V0m/home.png) | ![Service Page](https://i.ibb.co.com/pvDBHbtn/service.png) | ![Dashboard](https://i.ibb.co.com/20BVNjKW/dashboard.png) |
 
 ---
 
